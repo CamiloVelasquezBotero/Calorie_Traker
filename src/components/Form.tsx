@@ -59,8 +59,9 @@ export default function Form({dispatch, state}:FormProps) {
     }
 
   return (
+    
     <form
-        className="space-y-5 bg-white shadow p-10 rounded-lg"
+        className={`space-y-5 bg-white shadow p-10 rounded-lg`}
         onSubmit={handleSubmit}
     >
         <div className="grid grid-cols-1 gap-3">

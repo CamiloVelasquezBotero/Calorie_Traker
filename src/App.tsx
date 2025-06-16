@@ -33,7 +33,13 @@ function App() {
         className="bg-lime-500 py-20 px-5"
         ref={sectionRef}
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto -mt-10">
+          <p
+            className={`transition-all duration-300 p-1 bg-sky-900 text-white inline-block rounded-lg ml-10 font-bold
+              ${state.activeId ? "opacity-100 translate-y-0 pointer-events-auto mb-2" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+          >
+            Editando!...
+          </p>
           <Form 
             dispatch={dispatch}
             state={state}
